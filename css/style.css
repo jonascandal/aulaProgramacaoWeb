@@ -1,7 +1,7 @@
 :root {
 
   --color-blue-light: #a8d5e2;
-  --color-blue: #89c2d9;
+  --color-blue: #264957;
   --color-blue-dark: #61a5c2;
   --color-pink: #f7c5cc;
   --color-green: #b8e0d2;
@@ -9,7 +9,7 @@
   --color-purple: #d7bde2;
   --color-orange: #ffd8a9;
   --color-neutral-light: #f9f9f9;
-  --color-neutral-dark: #333;
+  --color-neutral-dark: #0f0f0f;
 
   --font-family: 'Segoe UI', Arial, sans-serif;
   --font-size-xs: 12px;
@@ -47,12 +47,11 @@ body {
 }
 
 header {
-  display: flexbox;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
   padding: var(--space-1);
   background-color: var(--color-blue-dark);
-  color: white;
+  color: var(--color-blue);
 }
 
 header h1 {
@@ -90,10 +89,11 @@ main {
   gap: var(--space-3);
 }
 
-section {
-  grid-column: span 12;
+section, footer {
   background: white;
-  padding: var(--space-2);
+  padding: var(--space-1);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  margin-bottom: var(--space-1);
+  border: 3px solid var(--color-blue-light);
 }
