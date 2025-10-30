@@ -1,11 +1,11 @@
 :root {
 
   --color-blue-light: #a8d5e2;
-  --color-blue: #264957;
-  --color-blue-dark: #61a5c2;
+  --color-blue: #0d2630;
+  --color-blue-dark: #c5e5f3;
   --color-pink: #f7c5cc;
   --color-green: #b8e0d2;
-  --color-yellow: #fff3b0;
+  --color-yellow: #ffce2e;
   --color-purple: #d7bde2;
   --color-orange: #ffd8a9;
   --color-neutral-light: #f9f9f9;
@@ -37,11 +37,12 @@
   margin: 0;
   padding: 0;
   box-sizing:border-box;
+  text-align: center;
 }
 
 body {
   font-family: var(--font-family);
-  background-color: var(--color-neutral-light);
+  background-color: var(--color-blue-dark);
   color: var(--color-neutral-dark);
   line-height: 1.6;
 }
@@ -62,10 +63,11 @@ nav ul {
   list-style: none;
   display: flex;
   gap: var(--space-2);
+  color: var(--color-blue);
 }
 
 nav ul li a {
-  color: white;
+  color: var(--color-blue);
   text-decoration: none;
   font-size: var(--font-size-md);
   transition: color 0.3s;
@@ -89,7 +91,7 @@ main {
   gap: var(--space-3);
 }
 
-section, footer {
+section {
   background: white;
   padding: var(--space-1);
   border-radius: var(--radius-md);
